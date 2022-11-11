@@ -1,31 +1,8 @@
- HỌC VIỆN CÔNG NGHỆ BƯU CHÍNH VIỄN THÔNG
-KHOA CÔNG NGHỆ THÔNG TIN
-----------
+Quản lí rạp phim
 
- 
-
-BÁO CÁO BÀI TẬP LỚN
-HỌC PHẦN: PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN
-ĐỀ TÀI: 3. Hệ thống quản lý rạp chiếu phim 
-
-	
-Nhóm bài tập lớn                 	:    16
-Nhóm học phần
-
-1. Đào Ngọc Huy
-2. Đỗ Ngọc Quang
-3. Đỗ Văn Hùng	:    03
-
--    B19DCCN305
--    B19DCCN521
--    B19DCCN292
-    
-Module cá nhân	M3: ◦ quản lí thông tin nhà cung cấp phim, 
-◦ nhập phim từ nhà cung cấp, 
-◦ xem thống kê phim theo doanh thu.
-
-
-
+setup:
+install spring tool
+install mysql
 
 1. Biểu đồ UC và mô tả (3 chức năng)
 a)	Quản lí thông tin nhà cung cấp phim
