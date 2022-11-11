@@ -41,7 +41,8 @@ Vì khi chọn chức năng quản lí thông tin nhà cung cấp người dùng
 Vì cần có nhà cung cấp gửi thông tin thì Quản lí mới có thể thực hiện thêm, sửa được -> đề xuất actor ẩn nhà cung cấp
 
 Do đó ta có lược đồ usecase như hình vẽ:
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270258-4347b80f-9313-4fad-853c-cf768a14da27.png)
+
 Trong đó:
 Use case quản lí đăng nhập: cho phép quản lí đăng nhập vào hệ thống
 Use case quản lí thông tin nhà cung cấp phim: cho phép quản lí thêm hoặc sửa hoặc xoá thông tin của nhà cung cấp phim
@@ -60,7 +61,7 @@ Do việc đăng nhập là bắt buộc để hoàn thành việc nhập phim t
 Do việc tìm nhà cung cấp phim là bắt buộc để có thể nhập phim từ nhà cung cấp nên use case nhập phim từ nhà cung cấp include usecase tìm nhà cung cấp
 
 Do đó ta có lược đồ usecase như hình vẽ: 
-![image](https://user-images.githubusercontent.com/60811649/201270120-280c3b17-ea9f-41d1-9e05-5abe31ea41e9.png)
+![image](https://user-images.githubusercontent.com/60811649/201270273-7f53796f-b152-4b04-b528-38b45919aca2.png)
 
  
 Trong đó:
@@ -81,7 +82,8 @@ Do phải chọn chức năng chọn thông tin thống kê thì mới được 
 Do các use case thống kê trong tháng, thống kê trong ngày, thống kê trong khoảng thời gian đều là tuỳ chọn của use case xem thống kê theo doanh thu nên các use case trên có quan hệ extend với use case xem thống kê theo doanh thu
 Ta thấy các use case thống kê trong tháng, thống kê trong ngày, thống kê trong khoảng thời gian giống nhau -> đề xuất use case trừu tượng thống kê theo thời gian
 Do đó ta có lược đồ usecase như hình vẽ: 
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270294-5fdd53ac-c8c8-4447-8ff9-5ed56d60a80e.png)
+
 Trong đó:
 Use case quản lí đăng nhập: cho phép quản lí đăng nhập vào hệ thống
 Use case chọn thông tin thống kê: cho phép quản lí chọn các loại thống kê
@@ -281,7 +283,8 @@ Phim và Thể loại liên kết tạo ra TheLoai-Phim duy nhất
 Thông tin của Loại ghế nằm trong ghế chiếu
 Lớp TkePhimTheoDoanhThu kế thừa lớp phim
 TkePhimTrongThang, TkePhimTrongNgay, TkePhimTrongKhoangTg kế thừa TkePhimTheoDoanhThu
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270328-392f219c-042f-4d02-b41a-36bece41f910.png)
+
 4. Biểu đồ trạng thái (3 chức năng)
 a.	Quản lí thông tin nhà cung cấp
 Từ giao diện đăng nhập nếu người dùng điền thông tin đăng nhập hợp lệ và click đăng nhập thì sẽ hiện ra giao diện chính của quản lí 
@@ -305,7 +308,8 @@ Từ giao diện quản lí thông tin nhà cung cấp nếu người dùng ch�
 Từ giao diện tìm nhà cung cấp nếu người dùng chọn một nhà cung cấp thì hệ thống sẽ thông báo xác nhận xóa nhà cung cấp
 
 Từ thông báo xác nhận xóa nhà cung cấp nếu người dùng chọn ok thì hệ thống sẽ chuyển về giao diện tìm nhà cung cấp
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270341-0d221b08-7d7a-46d9-a2f2-59be31a8904f.png)
+
 b.	Nhập phim từ nhà cung cấp
 Từ giao diện đăng nhập nếu người dùng điền thông tin đăng nhập hợp lệ và click đăng nhập thì sẽ hiện ra giao diện chính của quản lí 
 
@@ -313,7 +317,8 @@ Từ giao diện chính của quản lí nếu người dùng click nhập phim 
 
 Từ giao diện tìm và chọn nhà cung cấp nếu người dùng chọn 1 nhà cung cấp thì hệ thống sẽ chuyển sang giao diện tìm và chọn phim của nhà cung cấp
 Từ giao diện tìm và chọn phim của nhà cung cấp nếu người dùng chọn một phim thì hệ thống sẽ chuyển sang giao diện thông tin chi tiết của phim
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270355-ba58faf2-54f1-4e33-9eba-5457fb29d64c.png)
+
 c.	Thống kê phim theo doanh thu
 Từ giao diện đăng nhập nếu người dùng điền thông tin đăng nhập hợp lệ và click đăng     nhập thì sẽ hiện ra giao diện chính của quản lí 
 
@@ -340,6 +345,7 @@ Từ giao diện xem thống kê trong khoảng thời gian nếu người dùng
 
 Từ giao diện xem thống kê trong khoảng thời gian nếu người dùng chọn một phim thì hệ thống sẽ hiển thị giao diện thống kê chi tiết của phim
 
+![image](https://user-images.githubusercontent.com/60811649/201270377-8265c3fd-e65c-4f4d-8a5a-32b4020e2d39.png)
 
  
 5. Biểu đồ lớp pha phân tích (3 chức năng)
@@ -392,6 +398,7 @@ Giao diện tìm nhà cung cấp -> SearchNccView gồm các thành phần:
 	Đề xuất phương thức getNccByName() gán cho lớp NhaCungCap
 
  
+![image](https://user-images.githubusercontent.com/60811649/201270412-df507613-7f05-4765-b30f-8e4ecb104214.png)
 
 b.	Nhập phim từ nhà cung cấp
 
@@ -429,7 +436,8 @@ Giao diện xem thông tin chi tiết phim-> NhapPhimView gồm các thành ph�
 Để tìm phim cần xử lí dưới hệ thống:
 	Input: id 
 	Đề xuất phương thức nhapPhim() gán cho lớp Phim
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270568-71426ae0-3e30-41da-94e9-6e62e47e029b.png)
+
 c.	Thống kê phim theo doanh thu
 
 Giao diện đăng nhập -> đề xuất lớp Loginview foomg các thành phần:
@@ -483,6 +491,7 @@ Giao diện Thống kê phim chi tiết-> TkChiTietPhimView gồm các thành ph
 	Output: thống kê chi tiết của phim
 	Đề xuất phương thức getOneTkePhim() gán cho lớp TkePhimTheoDoanhThu
  
+![image](https://user-images.githubusercontent.com/60811649/201270670-0d4b1977-4826-490c-b83e-5fa726c6c6e4.png)
 
 
 6. Biểu đồ giao tiếp pha phân tích (3 chức năng)
@@ -522,7 +531,8 @@ Kịch bản chuẩn v2:
 
 Ta có biểu đồ tuần tự và biểu đồ cộng tác như sau:
  
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270717-55660559-6c15-4fcc-90b8-0a4dcb8290ef.png)
+
 b.	Nhập phim từ nhà cung cấp
 
 Kịch bản chuẩn v2: 
@@ -561,6 +571,7 @@ Kịch bản chuẩn v2:
 33 Lớp NhapPhimView gọi SearchPhimView
 34 Lớp SearchPhimView hiển thị cho người dùng
 Ta có biểu đồ tuần tự và biểu đồ cộng tác như sau:
+![image](https://user-images.githubusercontent.com/60811649/201270742-c280ab50-1ffa-4c3b-8da5-8f8f48958d2a.png)
 
  
  
@@ -600,6 +611,7 @@ Kịch bản chuẩn v2:
 31 Lớp TkePhimTrongThangView gọi lớp TkePhimTheoDoanhThu
 32 Lớp TkePhimTheoDoanhThu hiển thị cho quản lí
 Ta có biểu đồ tuần tự và biểu đồ cộng tác như sau:
+![image](https://user-images.githubusercontent.com/60811649/201270756-dffb0141-a2f6-40f7-b136-2624d7b51098.png)
 
  
 
@@ -610,7 +622,9 @@ Ta có biểu đồ tuần tự và biểu đồ cộng tác như sau:
 -	Bổ sung kiểu dữ liệu của thuộc tính theo ngôn ngữ lập trình Java
 -	Quan hệ Phim-TheLoai -> Theloai-Phim  được chuyển thành Phim chứa TheLoai-Phim và TheLoai-Phim chứa TheLoai
 -	Bổ sung các thuộc tính thành phần của quan hệ hợp thành/gắn chặt, ta thu được biểu đồ lớp thực thể pha thiết kế.
- 
+![image](https://user-images.githubusercontent.com/60811649/201270779-083484a6-2985-458e-afb1-f318f558c38f.png)
+
+
 8. Thiết kế CSDL liên quan (chung)
 Bước 1 Mỗi lớp thực thể đề xuất bảng tương ứng:
 
@@ -664,33 +678,40 @@ tblGheChieu có 2 khóa ngoại là : tblVeChieuid, tblPhongChieuid
 tblLoaiGhe có 1 khóa ngoại là : tblGheChieuid
 
 Bước 5: loại bỏ các thuộc tính dẫn xuất ta thu được biểu đồ csdl:
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270801-2d30b175-8cbb-4414-b780-af4dd542d453.png)
+
 
 9. Thiết kế BD đồ lớp (3 chức năng)
 Chức năng quản lí thông tin nhà cung cấp:
 Tầng giao diện có các trang jsp: XoaNccView.jsp, SuaNccView.jsp, SearchNccView.jsp, ThemNccView, QuanLiThongTinNccView.jsp, QuanLiHomeView.jsp, loginView.jsp, 
 Tầng thao tác với dữ liệu ta có các lớp DAO: NhaCungCapDAO, ThanhVienDAO
 Còn lại là các lớp thực thể
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270848-be01d248-affe-4f55-9003-02398acbc501.png)
+
 Chức năng nhập phim từ nhà cung cấp:
 Tầng giao diện có các trang jsp SearchNccView.jsp, QuanLiHomeView.jsp, loginView.jsp, SearchPhimView.jsp, NhapPhimView.jsp, NotFoundView.jsp, KhongTheNhapPhimView.jsp
 Tầng thao tác với dữ liệu ta có các lớp DAO: NhaCungCapDAO, ThanhVienDAO, HoaDonNhapDAO, PhimDAO
 Còn lại là các lớp thực thể
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270835-410a7e37-2d4f-4b84-84df-8fea2ce364e9.png)
+
 Chức năng xem thống kê phim theo doanh thu:
 Tầng giao diện có các trang jsp:  QuanLiHomeView.jsp, loginView.jsp, XemThongKeView.jsp, TkeChiTietPhimView.jsp, TkPhimTrongNgayView.jsp, TkPhimTrongKhoangTgView.jsp, TkPhimTrongThangView.jsp, TkPhimTheoDoanhThuView.jsp
 Tầng thao tác với dữ liệu ta có các lớp DAO: ThanhVienDAO, TkePhimTrongKhoangTgDAO, TkePhimTrongThangDAO, TkePhimTrongNgayDAO
 Còn lại là các lớp thực thể
- 
+![image](https://user-images.githubusercontent.com/60811649/201270865-6e555f4f-f9c7-44ae-b9f7-12c9f2cd3576.png)
+
 
 10 Thiết kế BD hoạt động (3 chức năng)
 Mỗi hành động trong biểu đồ hoạt động tương ứng với một phương thức đã thiết kế trong biểu đồ lớp
 Chức năng quản lí thông tin nhà cung cấp:
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270877-4ade37f4-243f-4d60-a5ba-9f27ed87b456.png)
+
 Chức năng nhập phim từ nhà cung cấp:
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270891-d4e51a5c-9e6e-4e94-ad9f-6391f9b8a5cf.png)
+
 Chức năng xem thống kê phim theo doanh thu:
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270900-832ae2c3-2b31-4690-876f-af46e6fcedf2.png)
+
 11. Thiết kế BD tuần tự (3 chức năng)
 Chức năng quản lí thông tin nhà cung cấp:
 Kịch bản chuẩn v3:
@@ -732,7 +753,8 @@ Kịch bản chuẩn v3:
 36 lớp NhaCungCapDAO trả về thông tin cho trang SuaNcc.jsp
 37 trang SuaNcc.jsp gọi trang SearchNccVIew.jsp
 38 trang SearchNccView.jsp hiển thị thông tin cho quản lí
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270911-78e12233-144c-4cce-8f5b-3d414b5b5f21.png)
+
 Chức năng nhập phim từ nhà cung cấp:
 Kịch bản chuẩn v3: 
 1 Nhân viên quản lí đăng nhập vào hệ thống
@@ -786,7 +808,8 @@ Kịch bản chuẩn v3:
 49 lớp HoaDonNhapDAO trả thông tin về cho trang NhapPhim.jsp
 50 NhapPhim.jsp gọi trang trang SearchPhimView.jsp
 51 trang SearchPhimView.jsp hiển thị thông tin cho người dùng
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270929-07e13430-b697-44a6-979d-4c60072cdde3.png)
+
 Chức năng xem thống kê phim theo doanh thu:
 1 Nhân viên quản lí đăng nhập vào hệ thống
 2 trang loginView.jsp gọi lớp ThanhVien để đóng gói thông tin thành viên
@@ -826,6 +849,7 @@ Chức năng xem thống kê phim theo doanh thu:
 36 lớp TkePhimTrongThangDAO  trả dữ liệu về trang TkChiTietPhimView.jsp
 37 lớp TkChiTietPhimView.jsp hiển thị thông tin cho người dùng
  
+![image](https://user-images.githubusercontent.com/60811649/201270942-879f6c62-09bf-4931-8d43-ac0545727d24.png)
 
 12. Thiết kế BD gói/triển khai (chung)
 
@@ -841,7 +865,9 @@ Các lớp DAO(Data Access Object) ở trong package dao
 Package jsp :
   Giao diện jsp
 
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270952-a61f00d5-467c-4ced-bb80-9ca6d31d4362.png)
+
 
 Biểu đồ triển khai:
- 
+ ![image](https://user-images.githubusercontent.com/60811649/201270959-fdf8b299-b025-44b2-9f1f-d140e5f9fe81.png)
+
