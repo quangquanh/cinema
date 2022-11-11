@@ -60,6 +60,7 @@ Do việc đăng nhập là bắt buộc để hoàn thành việc nhập phim t
 Do việc tìm nhà cung cấp phim là bắt buộc để có thể nhập phim từ nhà cung cấp nên use case nhập phim từ nhà cung cấp include usecase tìm nhà cung cấp
 
 Do đó ta có lược đồ usecase như hình vẽ: 
+![image](https://user-images.githubusercontent.com/60811649/201270120-280c3b17-ea9f-41d1-9e05-5abe31ea41e9.png)
 
  
 Trong đó:
